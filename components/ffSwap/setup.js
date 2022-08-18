@@ -72,11 +72,11 @@ function Setup({ theme, handleNext }) {
           setToAssetOptions(options)
           tav = options[0]
         } else if (localFromAsset.symbol === 'ibEUR') {
-          let options = [storeSwapAssets.find(x => x.symbol === 'MIM'), storeSwapAssets.find(x => x.symbol === 'sUSD')]
+          let options = [storeSwapAssets.find(x => x.symbol === 'sUSD')]
           setToAssetOptions(options)
           tav = options[0]
         } else {
-          let options = [storeSwapAssets.find(x => x.symbol === 'MIM')]
+          let options = []
           setToAssetOptions(options)
           tav = options[0]
         }
