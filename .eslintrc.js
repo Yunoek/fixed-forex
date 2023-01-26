@@ -18,10 +18,7 @@ module.exports = {
         "react"
     ],
     "ignorePatterns": [
-        // we probably want to change it to a function component,
-        // the error was:
-        // Parsing error: Unexpected token =
-        "components/unlock/unlock.js"
+        "*/"
     ],
     "rules": {
         "react/prop-types": "off",
