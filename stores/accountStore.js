@@ -191,8 +191,7 @@ class Store {
         return priceJSON;
       }
     } catch (e) {
-      console.log(e);
-      const web3 = await this._getWeb3Provider();
+      const web3 = await this.getWeb3Provider();
       const gasPrice = await web3.eth.getGasPrice();
       const gasPriceInGwei = web3.utils.fromWei(gasPrice, "gwei");
       return {

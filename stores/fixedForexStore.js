@@ -219,7 +219,6 @@ import abis from "./abis";
 import { bnToFixed, sumArray } from "../utils";
 
 import BigNumber from "bignumber.js";
-const fetch = require("node-fetch");
 
 class Store {
   constructor(dispatcher, emitter) {

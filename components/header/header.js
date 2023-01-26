@@ -241,23 +241,6 @@ function Header(props) {
           />
         </div>
 
-        {account && account.address ?
-          <div>
-          <Button
-            disableElevation
-            className={classes.prettyButton}
-            variant="contained"
-            startIcon={<MonetizationOnIcon />}
-            onClick={() => callClaim()}
-            disabled={ loading }
-          >
-            <Typography className={classes.headBtnTxt}>Claim { claimable == undefined ? 0 : parseFloat(claimable).toFixed(0) } vKP3R</Typography>
-          </Button>
-          </div>
-           :
-           <div>&nbsp;</div>
-         }
-
         <Button
           disableElevation
           className={classes.accountButton}

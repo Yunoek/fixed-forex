@@ -36,7 +36,6 @@ import abis from './abis';
 import { bnDec } from '../utils';
 
 import BigNumber from 'bignumber.js';
-const fetch = require('node-fetch');
 
 class Store {
   constructor(dispatcher, emitter) {
