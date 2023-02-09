@@ -1,12 +1,11 @@
 import { Typography, SvgIcon, Grid } from '@material-ui/core';
-import AccountBalanceWalletIcon from '@material-ui/icons/AccountBalanceWallet';
 import BigNumber from 'bignumber.js';
 import { formatCurrency } from '../../utils';
 
 import classes from './ffAssetOverview.module.css';
 
 function BalanceIcon(props) {
-  const { color, className } = props;
+  const {className } = props;
   return (
     <SvgIcon viewBox="0 0 48 48" strokeWidth="1" className={className}>
       <g strokeWidth="2" transform="translate(0, 0)"><path data-color="color-2" fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" d="M28,46v-8 c0-2.2-1.8-4-4-4l0,0c-2.2,0-4,1.8-4,4v8" strokeLinejoin="miter"></path> <line fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="2" y1="32" x2="2" y2="26" strokeLinejoin="miter"></line> <line fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="46" y1="32" x2="46" y2="26" strokeLinejoin="miter"></line> <polyline data-cap="butt" fill="none" stroke="#ffffff" strokeWidth="2" strokeMiterlimit="10" points="10.8,32 2,32 2,46 8,46 " strokeLinejoin="miter" strokeLinecap="butt"></polyline> <polyline data-cap="butt" fill="none" stroke="#ffffff" strokeWidth="2" strokeMiterlimit="10" points="37.2,32 46,32 46,46 40,46 " strokeLinejoin="miter" strokeLinecap="butt"></polyline> <polygon fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="34,16 14,16 8,46 40,46 " strokeLinejoin="miter"></polygon> <polyline fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" points="40,4 40,16 8,16 8,4 " strokeLinejoin="miter"></polyline> <line fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="16" y1="4" x2="16" y2="8" strokeLinejoin="miter"></line> <line fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="24" y1="8" x2="24" y2="4" strokeLinejoin="miter"></line> <line fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="32" y1="4" x2="32" y2="8" strokeLinejoin="miter"></line> <line fill="none" stroke="#ffffff" strokeWidth="2" strokeLinecap="square" strokeMiterlimit="10" x1="8" y1="8" x2="40" y2="8" strokeLinejoin="miter"></line></g>
