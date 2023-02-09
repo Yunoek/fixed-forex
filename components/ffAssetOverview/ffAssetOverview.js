@@ -55,7 +55,6 @@ export default function ffAssetOverview({ asset }) {
           <div className={ classes.flex1 }>
             <Typography className={ classes.title }>ib* Balances:</Typography>
             <Typography className={ classes.stakedAmount }>{ formatCurrency(balance) }</Typography>
-            <Typography className={ classes.assetSymbol }>${ formatCurrency(asset ? BigNumber(asset.price).times(balance) : 0) }</Typography>
           </div>
         </div>
         </Grid>
